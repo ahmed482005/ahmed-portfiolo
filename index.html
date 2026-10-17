@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ahmed Abdelhamed — Interactive CV & Portfolio. Data Scientist & AI Specialist specializing in Machine Learning, Deep Learning, Computer Vision, and SQL Data Analytics.">
+  <meta name="keywords" content="Ahmed Abdelhamed, CV, Resume, Data Scientist, Machine Learning, Deep Learning, Computer Vision, DEPI, NTI, ITI, ResNet50, SQL">
+  <meta name="author" content="Ahmed Abdelhamed">
+  
+  <title>Ahmed Abdelhamed | Interactive CV & AI Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="noise"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Navigation Bar (CV Header Actions) -->
+  <header class="nav-container">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#cv-top">
+        <span class="logo-badge">CV</span>
+        <span class="logo-text">Ahmed Abdelhamed<span class="dot">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#summary" class="nav-link"><i class="fa-regular fa-id-badge"></i> Summary</a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+        <a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education & Tracks</a>
+        <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Projects & Demos</a>
+        <a href="#certifications" class="nav-link"><i class="fa-solid fa-award"></i> Certifications</a>
+        <a href="#contact" class="nav-link"><i class="fa-regular fa-paper-plane"></i> Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-cv-print" onclick="window.print()" title="Print or Save as PDF">
+          <i class="fa-solid fa-file-pdf"></i> <span>Download / Print CV</span>
+        </button>
+        <a class="btn btn-primary" href="#contact">Hire Me <span>↗</span></a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="cv-wrapper" id="cv-top">
+    <!-- ==================== CV HEADER / HERO SECTION ==================== -->
+    <section class="cv-header-card" id="summary">
+      <div class="cv-header-grid">
+        <div class="cv-photo-box">
+          <img src="profile.jpg" alt="Ahmed Abdelhamed" class="cv-profile-img">
+          <span class="cv-status-dot" title="Available for opportunities"></span>
+        </div>
+
+        <div class="cv-header-info">
+          <div class="cv-title-row">
+            <h1 class="cv-candidate-name">Ahmed Abdelhamed</h1>
+            <span class="cv-role-badge">Data Scientist & AI Specialist</span>
+          </div>
+          
+          <p class="cv-tagline">
+            Turning raw data into intelligent, practical solutions through <strong>Machine Learning</strong>, <strong>Deep Learning (ResNet50 / CNNs)</strong>, and <strong>SQL Analytics</strong>.
+          </p>
+
+          <!-- Contact & Social Pills -->
+          <div class="cv-contact-pills">
+            <a href="mailto:ab402819@gmail.com" class="contact-pill">
+              <i class="fa-solid fa-envelope"></i> ab402819@gmail.com
+            </a>
+            <a href="https://github.com/ahmed482005" target="_blank" rel="noopener" class="contact-pill">
+              <i class="fa-brands fa-github"></i> github.com/ahmed482005
+            </a>
+            <a href="https://www.linkedin.com/in/ahmed-abdelhamed-08bba9388" target="_blank" rel="noopener" class="contact-pill">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
+            </a>
+            <span class="contact-pill">
+              <i class="fa-solid fa-location-dot"></i> Sheikh Zayed City, Giza, Egypt (Open to Remote / Relocation)
+            </span>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="cv-actions-row">
+            <button class="btn btn-primary" onclick="window.print()">
+              <i class="fa-solid fa-print"></i> Print CV / Save PDF
+            </button>
+            <button class="btn btn-secondary" onclick="copyContactEmail()">
+              <i class="fa-regular fa-copy"></i> Copy Email
+            </button>
+            <a class="btn btn-secondary" href="#experience">
+              <i class="fa-solid fa-play"></i> Test Live Demos
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CV SECTION 1: PROFESSIONAL SUMMARY ==================== -->
+    <section class="cv-section">
+      <div class="cv-section-title-bar">
+        <div class="section-icon-wrap"><i class="fa-regular fa-user"></i></div>
+        <h2>01. Professional Summary</h2>
+      </div>
+
+      <div class="cv-card cv-card-padded">
+        <p class="cv-summary-paragraph">
+          Ambitious and results-driven <strong>Data Scientist and AI Specialist</strong> with a solid foundation in Python, Machine Learning pipelines, Deep Learning (Computer Vision & Transfer Learning), and advanced SQL data analytics.
+        </p>
+        <p class="cv-summary-paragraph">
+          Currently accelerating hands-on expertise through Egypt's most prestigious technology development programs: the <strong>Digital Egypt Pioneers Initiative (DEPI - Data Science Track)</strong>, the <strong>National Telecommunication Institute (NTI - AI for Business Track)</strong>, and the <strong>Information Technology Institute (ITI - AI & Machine Learning Foundations)</strong>.
+        </p>
+        <p class="cv-summary-paragraph">
+          Combining this technical mastery with my academic studies in <strong>Computer Science and Artificial Intelligence at Ahram Canadian University (Egypt)</strong>, enabling me to build intelligent solutions, develop machine learning models, and translate complex data into practical, reliable systems.
+        </p>
+
+        <div class="cv-summary-stats">
+          <div class="c-stat">
+            <strong>184,838+</strong>
+            <span>Images Analyzed (Fruits-360)</span>
+          </div>
+          <div class="c-stat">
+            <strong>11</strong>
+            <span>MENA Nations Modeled</span>
+          </div>
+          <div class="c-stat">
+            <strong>3+</strong>
+            <span>Elite Tech Tracks (DEPI / NTI / ITI)</span>
+          </div>
+          <div class="c-stat">
+            <strong>98.4%</strong>
+            <span>Transfer Learning Accuracy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CV SECTION 2: TECHNICAL SKILLS MATRIX ==================== -->
+    <section class="cv-section" id="skills">
+      <div class="cv-section-title-bar">
+        <div class="section-icon-wrap"><i class="fa-solid fa-layer-group"></i></div>
+        <h2>02. Technical Skills Matrix</h2>
+      </div>
+
+      <div class="cv-skills-grid">
+        <!-- AI & Deep Learning -->
+        <div class="cv-card skill-block">
+          <div class="skill-block-header">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Machine Learning & Deep Learning</h3>
+          </div>
+          <ul class="skill-tag-list">
+            <li><span>Python (Advanced)</span></li>
+            <li><span>TensorFlow & Keras</span></li>
+            <li><span>ResNet50 Transfer Learning</span></li>
+            <li><span>Convolutional Neural Networks (CNN)</span></li>
+            <li><span>Computer Vision</span></li>
+            <li><span>Scikit-Learn</span></li>
+            <li><span>Model Fine-Tuning & Evaluation</span></li>
+            <li><span>Data Augmentation</span></li>
+            <li><span>MLOps Foundations</span></li>
+          </ul>
+        </div>
+
+        <!-- Data Engineering & Analytics -->
+        <div class="cv-card skill-block">
+          <div class="skill-block-header">
+            <i class="fa-solid fa-database"></i>
+            <h3>Data Engineering & Analytics</h3>
+          </div>
+          <ul class="skill-tag-list">
+            <li><span>SQL (PostgreSQL / SQLite)</span></li>
+            <li><span>Pandas & NumPy</span></li>
+            <li><span>Exploratory Data Analysis (EDA)</span></li>
+            <li><span>Data Cleaning & Wrangling</span></li>
+            <li><span>Feature Engineering</span></li>
+            <li><span>Matplotlib & Seaborn</span></li>
+            <li><span>Statistical Inference</span></li>
+            <li><span>Multi-table Aggregations & Joins</span></li>
+            <li><span>CSV / JSON Data Pipelines</span></li>
+          </ul>
+        </div>
+
+        <!-- Software Development & Languages -->
+        <div class="cv-card skill-block">
+          <div class="skill-block-header">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Software Development & Tools</h3>
+          </div>
+          <ul class="skill-tag-list">
+            <li><span>HTML5 & CSS3</span></li>
+            <li><span>JavaScript (ES6+)</span></li>
+            <li><span>Git & GitHub Workflow</span></li>
+            <li><span>Python Tkinter GUI</span></li>
+            <li><span>Applied Cryptography (AES, SHA-256)</span></li>
+            <li><span>Jupyter Notebooks & VS Code</span></li>
+            <li><span>LocalStorage & State Handling</span></li>
+            <li><span>Responsive Web Architecture</span></li>
+          </ul>
+        </div>
+
+        <!-- Languages & Soft Skills -->
+        <div class="cv-card skill-block">
+          <div class="skill-block-header">
+            <i class="fa-solid fa-globe"></i>
+            <h3>Languages & Core Competencies</h3>
+          </div>
+          <div class="languages-list">
+            <div class="lang-item">
+              <div class="lang-head"><span>Arabic</span><strong>Native</strong></div>
+              <div class="lang-bar"><div class="lang-fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-head"><span>English</span><strong>Professional / Fluent</strong></div>
+              <div class="lang-bar"><div class="lang-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-head"><span>French</span><strong>Academic Studies</strong></div>
+              <div class="lang-bar"><div class="lang-fill" style="width: 70%;"></div></div>
+            </div>
+          </div>
+          <div class="soft-skills-tags">
+            <span>Analytical Problem Solving</span>
+            <span>Business Value Translation</span>
+            <span>Cross-Functional Communication</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CV SECTION 3: EDUCATION & SPECIALIZED TRACKS ==================== -->
+    <section class="cv-section" id="education">
+      <div class="cv-section-title-bar">
+        <div class="section-icon-wrap"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h2>03. Education & Specialized ICT Programs</h2>
+      </div>
+
+      <div class="cv-timeline">
+        <!-- Hochschule Niederrhein -->
+        <div class="cv-timeline-item">
+          <div class="cv-time-marker"></div>
+          <div class="cv-time-content cv-card">
+            <div class="cv-item-header">
+              <div>
+                <h3 class="cv-degree">Bachelor of Science (BSc) — Computer Science & Artificial Intelligence</h3>
+                <h4 class="cv-institution">Al-Ahram Canadian University · Egypt</h4>
+              </div>
+              <span class="cv-date-badge">Undergraduate</span>
+            </div>
+            <p class="cv-item-desc">
+              Specialized computer science and artificial intelligence education focused on programming, data science, machine learning, algorithms, and intelligent systems.
+            </p>
+            <div class="cv-item-tags">
+              <span>Computer Science</span><span>Artificial Intelligence</span><span>Data Science</span><span>Machine Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DEPI -->
+        <div class="cv-timeline-item">
+          <div class="cv-time-marker highlight"></div>
+          <div class="cv-time-content cv-card highlight-border">
+            <div class="cv-item-header">
+              <div>
+                <h3 class="cv-degree">Data Science Track</h3>
+                <h4 class="cv-institution">Digital Egypt Pioneers Initiative (DEPI) · MCIT</h4>
+              </div>
+              <span class="cv-date-badge">Specialization</span>
+            </div>
+            <p class="cv-item-desc">
+              National initiative under the Ministry of Communications and Information Technology. Intensive specialization spanning Python data manipulation, statistical analysis, feature engineering, and deploying supervised & unsupervised machine learning pipelines.
+            </p>
+            <div class="cv-item-tags">
+              <span>Python</span><span>Pandas</span><span>Scikit-Learn</span><span>Machine Learning</span><span>Data Science Lifecycle</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- NTI -->
+        <div class="cv-timeline-item">
+          <div class="cv-time-marker"></div>
+          <div class="cv-time-content cv-card">
+            <div class="cv-item-header">
+              <div>
+                <h3 class="cv-degree">AI for Business Track</h3>
+                <h4 class="cv-institution">National Telecommunication Institute (NTI)</h4>
+              </div>
+              <span class="cv-date-badge">Professional Track</span>
+            </div>
+            <p class="cv-item-desc">
+              Applied artificial intelligence training focused on implementing practical AI models into business operations, commercial decision-support systems, customer insights, and digital products.
+            </p>
+            <div class="cv-item-tags">
+              <span>AI Applications</span><span>Decision Support</span><span>Business Intelligence</span><span>Optimization</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITI -->
+        <div class="cv-timeline-item">
+          <div class="cv-time-marker"></div>
+          <div class="cv-time-content cv-card">
+            <div class="cv-item-header">
+              <div>
+                <h3 class="cv-degree">AI & Machine Learning Foundations</h3>
+                <h4 class="cv-institution">Information Technology Institute (ITI)</h4>
+              </div>
+              <span class="cv-date-badge">Foundational Excellence</span>
+            </div>
+            <p class="cv-item-desc">
+              Deep foundational training covering linear algebra, calculus for ML, neural networks, loss function optimization, hyperparameter tuning, model validation, and metrics (Precision, Recall, F1, ROC-AUC).
+            </p>
+            <div class="cv-item-tags">
+              <span>Neural Networks</span><span>Math for AI</span><span>Classification & Regression</span><span>Model Validation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CV SECTION 4: PROJECTS & PRACTICAL EXPERIENCE (WITH LIVE DEMOS) ==================== -->
+    <section class="cv-section" id="experience">
+      <div class="cv-section-title-bar">
+        <div class="section-icon-wrap"><i class="fa-solid fa-code-branch"></i></div>
+        <h2>04. Technical Projects & Practical Experience (with Live Demos)</h2>
+      </div>
+
+      <div class="cv-projects-container">
+
+        <!-- PROJECT 1: Fruit Classification (Deep Learning / ResNet50) -->
+        <div class="cv-card cv-project-card">
+          <div class="cv-project-top">
+            <div>
+              <div class="cv-project-badge-row">
+                <span class="cv-badge-ai"><i class="fa-solid fa-brain"></i> Deep Learning & Computer Vision</span>
+                <span class="cv-repo-pill">
+                  <a href="https://github.com/ahmed482005/Fruit-Image-Classification" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i> ahmed482005/Fruit-Image-Classification ↗
+                  </a>
+                </span>
+              </div>
+              <h3 class="cv-project-title">Fruit-360 Deep Learning Classifier (Custom CNN vs. ResNet50)</h3>
+            </div>
+            <div class="cv-project-metrics-pill">
+              <span>184,838 Images</span> · <span>263 Categories</span> · <strong class="text-success">98.4% Accuracy</strong>
+            </div>
+          </div>
+
+          <div class="cv-project-body-grid">
+            <div class="cv-project-details">
+              <ul class="cv-bullet-list">
+                <li>
+                  <strong>Problem Statement:</strong> Large-scale, fine-grained visual classification across 263 distinct fruit and vegetable varieties with severe class overlap.
+                </li>
+                <li>
+                  <strong>Methodology & Architecture:</strong> Built and trained a multi-layer Convolutional Neural Network (CNN) from scratch, and benchmarked against a pre-trained <strong>ResNet50 Transfer Learning</strong> backbone with top-layer fine-tuning.
+                </li>
+                <li>
+                  <strong>Data Engineering & Augmentation:</strong> Implemented real-time image augmentation (rotations, zooms, flips, scaling) to avoid overfitting across 184,838 training samples.
+                </li>
+                <li>
+                  <strong>Performance & Inference:</strong> Achieved <strong>98.4% Top-1 accuracy</strong> with an average inference latency of ~11.4 ms.
+                </li>
+              </ul>
+
+              <div class="cv-project-tags">
+                <span>TensorFlow</span><span>Keras</span><span>ResNet50</span><span>CNN</span><span>Computer Vision</span><span>Python</span><span>Data Augmentation</span>
+              </div>
+
+              <div class="cv-project-actions">
+                <button class="btn btn-primary" onclick="openDemo('fruit-demo')">
+                  <i class="fa-solid fa-play"></i> Launch Full Interactive Studio
+                </button>
+                <a class="btn btn-secondary" href="https://github.com/ahmed482005/Fruit-Image-Classification" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i> Inspect GitHub Repository
+                </a>
+              </div>
+            </div>
+
+            <!-- In-Card Live Interactive Demo -->
+            <div class="cv-live-sandbox">
+              <div class="sandbox-header">
+                <span class="live-dot"></span>
+                <strong>Live Model Inference Sandbox</strong>
+                <span class="sandbox-tag">Click fruit to test:</span>
+              </div>
+
+              <div class="fruit-selector-chips">
+                <button class="fruit-chip active" onclick="selectFruitDemo('apple', this)">🍎 Apple Braeburn</button>
+                <button class="fruit-chip" onclick="selectFruitDemo('banana', this)">🍌 Banana</button>
+                <button class="fruit-chip" onclick="selectFruitDemo('strawberry', this)">🍓 Strawberry</button>
+                <button class="fruit-chip" onclick="selectFruitDemo('lemon', this)">🍋 Lemon</button>
+              </div>
+
+              <div class="demo-visual-screen">
+                <div class="demo-fruit-visual" id="fruitVisual">
+                  <div class="fruit-icon-display" id="fruitIcon">🍎</div>
+                  <div class="scanline"></div>
+                </div>
+                <div class="demo-inference-results">
+                  <div class="result-top-label">
+                    <span>Predicted Class:</span>
+                    <strong id="fruitPredictedClass" class="text-accent">Apple Braeburn</strong>
+                  </div>
+                  <div class="confidence-bar-wrapper">
+                    <div class="confidence-bar-fill" id="fruitConfidenceBar" style="width: 99.2%;"></div>
+                  </div>
+                  <div class="result-metrics-sub">
+                    <span>Confidence: <strong id="fruitConfidenceText">99.2%</strong></span>
+                    <span>Latency: <strong class="text-success">11.4 ms</strong></span>
+                  </div>
+                  <div class="top-predictions-list" id="fruitTopClasses">
+                    <div class="pred-row"><span>1. Apple Braeburn</span><span>99.2%</span></div>
+                    <div class="pred-row"><span>2. Apple Crimson Snow</span><span>0.6%</span></div>
+                    <div class="pred-row"><span>3. Apple Golden Delicious</span><span>0.2%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: MENA SQL & Data Analysis -->
+        <div class="cv-card cv-project-card">
+          <div class="cv-project-top">
+            <div>
+              <div class="cv-project-badge-row">
+                <span class="cv-badge-data"><i class="fa-solid fa-database"></i> SQL & Exploratory Data Analysis</span>
+                <span class="cv-repo-pill">
+                  <a href="https://github.com/ahmed482005/data-analysis-with-sql" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i> ahmed482005/data-analysis-with-sql ↗
+                  </a>
+                </span>
+              </div>
+              <h3 class="cv-project-title">MENA Multi-Decade Economic & Development Indicators Analysis</h3>
+            </div>
+            <div class="cv-project-metrics-pill">
+              <span>11 Countries</span> · <span>World Bank Dataset</span> · <strong class="text-success">Multi-Table SQL</strong>
+            </div>
+          </div>
+
+          <div class="cv-project-body-grid">
+            <div class="cv-project-details">
+              <ul class="cv-bullet-list">
+                <li>
+                  <strong>Scope & Data Pipeline:</strong> Conducted comprehensive data extraction, normalization, and statistical analysis across 11 Middle East & North Africa (MENA) nations utilizing World Bank indicators.
+                </li>
+                <li>
+                  <strong>Advanced SQL Queries:</strong> Wrote complex SQL joins, aggregations, window functions, and subqueries to uncover macroeconomic growth rates, Foreign Direct Investment (FDI) inflows, and CO2 emissions per capita.
+                </li>
+                <li>
+                  <strong>Analytical Storytelling:</strong> Leveraged Python (Pandas, NumPy, Matplotlib, Seaborn) to visualize correlations between renewable energy adoption and sustainable GDP expansion.
+                </li>
+              </ul>
+
+              <div class="cv-project-tags">
+                <span>SQL</span><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>EDA</span><span>Data Wrangling</span>
+              </div>
+
+              <div class="cv-project-actions">
+                <button class="btn btn-primary" onclick="openDemo('sql-demo')">
+                  <i class="fa-solid fa-terminal"></i> Open Full SQL Query Studio
+                </button>
+                <a class="btn btn-secondary" href="https://github.com/ahmed482005/data-analysis-with-sql" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i> Inspect GitHub Repository
+                </a>
+              </div>
+            </div>
+
+            <!-- In-Card Live SQL Sandbox -->
+            <div class="cv-live-sandbox">
+              <div class="sandbox-header">
+                <span class="live-dot"></span>
+                <strong>Live SQL Query Execution</strong>
+                <span class="sandbox-tag">Preset queries:</span>
+              </div>
+
+              <div class="sql-query-presets">
+                <button class="sql-preset-btn active" onclick="runPresetQuery('gdp', this)">Top GDP Growth</button>
+                <button class="sql-preset-btn" onclick="runPresetQuery('co2', this)">CO2 vs Renewable</button>
+                <button class="sql-preset-btn" onclick="runPresetQuery('pop', this)">Population & Urban</button>
+              </div>
+
+              <div class="sql-editor-mock">
+                <code id="sqlQueryText">SELECT country, gdp_growth_pct, fdi_inflows_usd_b 
+FROM mena_indicators 
+WHERE year = 2023 
+ORDER BY gdp_growth_pct DESC LIMIT 4;</code>
+              </div>
+
+              <div class="sql-results-table-wrapper">
+                <table class="sql-table" id="sqlResultTable">
+                  <thead>
+                    <tr><th>Country</th><th>GDP Growth (%)</th><th>FDI ($B)</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Egypt</td><td class="text-success">+4.2%</td><td>$10.1B</td></tr>
+                    <tr><td>UAE</td><td class="text-success">+3.8%</td><td>$22.7B</td></tr>
+                    <tr><td>Saudi Arabia</td><td class="text-success">+3.4%</td><td>$12.3B</td></tr>
+                    <tr><td>Morocco</td><td class="text-success">+3.0%</td><td>$3.8B</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: Cryptography & Security Suite -->
+        <div class="cv-card cv-project-card">
+          <div class="cv-project-top">
+            <div>
+              <div class="cv-project-badge-row">
+                <span class="cv-badge-software"><i class="fa-solid fa-shield-halved"></i> Python Software & Applied Cryptography</span>
+                <span class="cv-repo-pill">
+                  <a href="https://github.com/ahmed482005/security" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i> ahmed482005/security ↗
+                  </a>
+                </span>
+              </div>
+              <h3 class="cv-project-title">Multi-Algorithm Cryptography & Integrity Hashing Application</h3>
+            </div>
+            <div class="cv-project-metrics-pill">
+              <span>Python Desktop App</span> · <span>Tkinter GUI</span> · <strong class="text-success">10+ Ciphers</strong>
+            </div>
+          </div>
+
+          <div class="cv-project-body-grid">
+            <div class="cv-project-details">
+              <ul class="cv-bullet-list">
+                <li>
+                  <strong>Application Architecture:</strong> Engineered a standalone Python desktop application with a Tkinter Graphical User Interface (GUI) for interactive data encryption, decryption, and hash validation.
+                </li>
+                <li>
+                  <strong>Cryptographic Algorithms:</strong> Implemented both classical and modern cryptographic techniques: <strong>AES, DES, Vigenère, Vernam, Playfair, RC4, RSA, MD5, SHA-1, and SHA-256</strong>.
+                </li>
+                <li>
+                  <strong>Practical Utility:</strong> Provides fast key generation, data obfuscation, and SHA-256 integrity verification for sensitive digital assets.
+                </li>
+              </ul>
+
+              <div class="cv-project-tags">
+                <span>Python</span><span>Cryptography</span><span>Tkinter GUI</span><span>AES / DES</span><span>SHA-256 Hashing</span>
+              </div>
+
+              <div class="cv-project-actions">
+                <button class="btn btn-primary" onclick="openDemo('crypto-demo')">
+                  <i class="fa-solid fa-lock"></i> Open Full Crypto Sandbox
+                </button>
+                <a class="btn btn-secondary" href="https://github.com/ahmed482005/security" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i> Inspect GitHub Repository
+                </a>
+              </div>
+            </div>
+
+            <!-- In-Card Live Crypto Sandbox -->
+            <div class="cv-live-sandbox">
+              <div class="sandbox-header">
+                <span class="live-dot"></span>
+                <strong>Live Client-Side Cipher Runner</strong>
+                <span class="sandbox-tag">Type to encrypt:</span>
+              </div>
+
+              <div class="crypto-inputs">
+                <div class="input-group-row">
+                  <input type="text" id="livePlaintext" value="Ahmed Abdelhamed AI 2026" placeholder="Enter plaintext" oninput="runLiveCrypto()">
+                  <select id="liveCipherAlgo" onchange="runLiveCrypto()">
+                    <option value="vigenere">Vigenère Cipher</option>
+                    <option value="caesar">Caesar (Shift 3)</option>
+                    <option value="sha256">SHA-256 Hash</option>
+                  </select>
+                </div>
+                <input type="text" id="liveCryptoKey" value="KEY" placeholder="Key (e.g. KEY)" oninput="runLiveCrypto()">
+              </div>
+
+              <div class="crypto-output-card">
+                <div class="crypto-output-title">OUTPUT CIPHERTEXT / HASH:</div>
+                <div class="crypto-output-value" id="liveCiphertext">Klrqh Ekdoptkch Kk 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: Artisan Hub (Web Application) -->
+        <div class="cv-card cv-project-card">
+          <div class="cv-project-top">
+            <div>
+              <div class="cv-project-badge-row">
+                <span class="cv-badge-software"><i class="fa-solid fa-bag-shopping"></i> Full-Stack Web Development</span>
+                <span class="cv-repo-pill">
+                  <a href="https://github.com/ahmed482005/artisan--website" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i> ahmed482005/artisan--website ↗
+                  </a>
+                </span>
+              </div>
+              <h3 class="cv-project-title">Artisan Hub — Responsive Handcrafted E-Commerce Platform</h3>
+            </div>
+            <div class="cv-project-metrics-pill">
+              <span>Vanilla JS / CSS</span> · <span>LocalStorage State</span> · <strong class="text-success">Interactive UI</strong>
+            </div>
+          </div>
+
+          <div class="cv-project-body-grid">
+            <div class="cv-project-details">
+              <ul class="cv-bullet-list">
+                <li>
+                  <strong>Platform Development:</strong> Developed a responsive web application for artisan craftspeople featuring real-time product search, filtering, and customer reviews.
+                </li>
+                <li>
+                  <strong>Frontend State Management:</strong> Built a dynamic cart calculator and favorites system using persistent browser LocalStorage without backend dependency.
+                </li>
+                <li>
+                  <strong>UX Enhancements:</strong> Form validation, dark/light theme switching, and responsive design across all screen sizes.
+                </li>
+              </ul>
+
+              <div class="cv-project-tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span><span>LocalStorage</span><span>Responsive Architecture</span>
+              </div>
+
+              <div class="cv-project-actions">
+                <button class="btn btn-primary" onclick="openDemo('artisan-demo')">
+                  <i class="fa-solid fa-eye"></i> View Architecture Preview
+                </button>
+                <a class="btn btn-secondary" href="https://github.com/ahmed482005/artisan--website" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i> Inspect GitHub Repository
+                </a>
+              </div>
+            </div>
+
+            <!-- In-Card Artisan Cart Sandbox -->
+            <div class="cv-live-sandbox">
+              <div class="sandbox-header">
+                <span class="live-dot"></span>
+                <strong>Artisan Hub Cart Simulation</strong>
+                <span class="sandbox-tag">Click to add:</span>
+              </div>
+
+              <div class="artisan-mini-catalog">
+                <div class="artisan-item">
+                  <div class="art-thumb">🏺</div>
+                  <div class="art-info">
+                    <strong>Handmade Ceramic Vase</strong>
+                    <span>$45.00</span>
+                  </div>
+                  <button class="btn-mini-cart" onclick="simulateAddToCart('Ceramic Vase', 45)">+ Add</button>
+                </div>
+                <div class="artisan-item">
+                  <div class="art-thumb">🧶</div>
+                  <div class="art-info">
+                    <strong>Boho Macrame Wall Art</strong>
+                    <span>$32.00</span>
+                  </div>
+                  <button class="btn-mini-cart" onclick="simulateAddToCart('Macrame Wall Art', 32)">+ Add</button>
+                </div>
+              </div>
+
+              <div class="artisan-cart-summary">
+                <span>Cart Items: <strong id="artisanCartCount">0</strong></span>
+                <span>Total: <strong id="artisanCartTotal" class="text-accent">$0.00</strong></span>
+                <button class="btn-clear-cart" onclick="clearArtisanCart()">Clear</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CV SECTION 5: CERTIFICATIONS & CREDENTIALS ==================== -->
+    <section class="cv-section" id="certifications">
+      <div class="cv-section-title-bar">
+        <div class="section-icon-wrap"><i class="fa-solid fa-award"></i></div>
+        <h2>05. Professional Certifications & Training Programs</h2>
+      </div>
+
+      <div class="cv-cert-grid">
+        <div class="cv-card cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="cert-info">
+            <h4>Data Science Specialization</h4>
+            <span>Digital Egypt Pioneers Initiative (DEPI) · MCIT</span>
+            <small>Covering Python, EDA, Scikit-learn, and Machine Learning pipelines</small>
+          </div>
+        </div>
+
+        <div class="cv-card cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+          <div class="cert-info">
+            <h4>Artificial Intelligence for Business</h4>
+            <span>National Telecommunication Institute (NTI)</span>
+            <small>Applied AI decision support systems, business analytics, and automation</small>
+          </div>
+        </div>
+
+        <div class="cv-card cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+          <div class="cert-info">
+            <h4>AI & Machine Learning Foundations</h4>
+            <span>Information Technology Institute (ITI)</span>
+            <small>Mathematical modeling, neural networks, classification, and evaluation metrics</small>
+          </div>
+        </div>
+
+        <div class="cv-card cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="cert-info">
+            <h4>Computer Science & Artificial Intelligence</h4>
+            <span>Ahram Canadian University · Faculty of Computer Science & Artificial Intelligence</span>
+            <small>Artificial intelligence, machine learning, computer science, data analysis, and intelligent systems</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CV SECTION 6: CONTACT & OPPORTUNITIES ==================== -->
+    <section class="cv-section" id="contact">
+      <div class="cv-section-title-bar">
+        <div class="section-icon-wrap"><i class="fa-solid fa-paper-plane"></i></div>
+        <h2>06. Contact & Candidate Inquiries</h2>
+      </div>
+
+      <div class="cv-card cv-contact-card">
+        <div class="cv-contact-header">
+          <h3>Ready to Add Value to Your Data & AI Team</h3>
+          <p>
+            I am currently open to full-time roles, internships, and research collaborations in <strong>Data Science, Machine Learning Engineering, and Computer Vision</strong>.
+          </p>
+        </div>
+
+        <div class="cv-contact-columns">
+          <div class="cv-contact-info-list">
+            <div class="cv-contact-tile">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <span class="c-tile-label">Direct Email</span>
+                <a href="mailto:ab402819@gmail.com" class="c-tile-value">ab402819@gmail.com</a>
+              </div>
+              <button class="btn-copy-mini" onclick="copyContactEmail()" title="Copy email">
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <div class="cv-contact-tile">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <div>
+                <span class="c-tile-label">LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/ahmed-abdelhamed-08bba9388" target="_blank" rel="noopener" class="c-tile-value">
+                  linkedin.com/in/ahmed-abdelhamed-08bba9388 ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="cv-contact-tile">
+              <i class="fa-brands fa-github"></i>
+              <div>
+                <span class="c-tile-label">GitHub Portfolio</span>
+                <a href="https://github.com/ahmed482005" target="_blank" rel="noopener" class="c-tile-value">
+                  github.com/ahmed482005 ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="cv-contact-tile">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span class="c-tile-label">Current Location</span>
+                <span class="c-tile-value text-white">Cairo, Egypt · Open to Relocation & Remote</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct In-Page Message Form -->
+          <form class="cv-quick-form" onsubmit="handleContactSubmit(event)">
+            <div class="form-group">
+              <label>Your Name / Recruiter Name</label>
+              <input type="text" id="senderName" required placeholder="e.g. Sarah Jenkins (Tech Lead)">
+            </div>
+            <div class="form-group">
+              <label>Your Work Email</label>
+              <input type="email" id="senderEmail" required placeholder="sarah@company.com">
+            </div>
+            <div class="form-group">
+              <label>Role / Opportunity Subject</label>
+              <input type="text" id="senderSubject" placeholder="Data Scientist / AI Specialist Role">
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea id="senderMessage" rows="3" required placeholder="Hi Ahmed, we reviewed your Fruits-360 classification and SQL projects and would like to discuss an opportunity..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-paper-plane"></i> Send Direct Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CV FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <strong>Ahmed Abdelhamed — Curriculum Vitae & Portfolio</strong>
+        <span>DEPI · NTI · ITI · Hochschule Niederrhein · 2026</span>
+      </div>
+      <div class="footer-links">
+        <a href="#cv-top"><i class="fa-solid fa-arrow-up"></i> Top</a>
+        <a href="javascript:window.print()"><i class="fa-solid fa-print"></i> Print CV</a>
+        <a href="https://github.com/ahmed482005" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/ahmed-abdelhamed-08bba9388" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODALS FOR FULL LIVE DEMOS ==================== -->
+
+  <!-- MODAL 1: RECRUITER FAST-TRACK MODAL -->
+  <div class="modal-overlay" id="recruiterModal" onclick="closeModalOnBackdrop(event, 'recruiterModal')">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-briefcase text-accent"></i>
+          <h3>Candidate Profile & Qualifications Summary</h3>
+        </div>
+        <button class="modal-close" onclick="closeModal('recruiterModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="recruiter-modal-content">
+          <div class="modal-summary-banner">
+            <div class="modal-profile-header-wrap">
+              <img src="profile.jpg" alt="Ahmed Abdelhamed" class="modal-avatar-img">
+              <div>
+                <h3>Ahmed Abdelhamed</h3>
+                <p>Data Scientist · Machine Learning Engineer · Computer Vision Specialist</p>
+              </div>
+            </div>
+            <a href="mailto:ab402819@gmail.com" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-envelope"></i> Email Candidate
+            </a>
+          </div>
+
+          <div class="modal-grid-2">
+            <div>
+              <h4><i class="fa-solid fa-graduation-cap"></i> Training & Academics</h4>
+              <ul class="modal-list">
+                <li><strong>DEPI:</strong> Data Science Track (MCIT, Egypt)</li>
+                <li><strong>NTI:</strong> AI for Business Track (National Telecom Institute)</li>
+                <li><strong>ITI:</strong> AI & Machine Learning Foundations (Information Tech Institute)</li>
+                <li><strong>Hochschule Niederrhein:</strong> BA Sales & Marketing (Germany)</li>
+              </ul>
+            </div>
+            <div>
+              <h4><i class="fa-solid fa-laptop-code"></i> Technical Highlights</h4>
+              <ul class="modal-list">
+                <li><strong>Deep Learning:</strong> ResNet50 Transfer Learning, CNNs, Fruits-360 dataset (184K images)</li>
+                <li><strong>Data Analytics:</strong> SQL advanced queries, EDA, Pandas, NumPy, Matplotlib</li>
+                <li><strong>Applied Security:</strong> Multi-cipher Python desktop tool (AES, SHA-256)</li>
+                <li><strong>Web Tech:</strong> HTML5, CSS3, JavaScript, Git & GitHub</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="modal-footer-action">
+            <button class="btn btn-primary" onclick="window.print()">
+              <i class="fa-solid fa-print"></i> Print / Save as PDF
+            </button>
+            <button class="btn btn-secondary" onclick="closeModal('recruiterModal')">
+              Close Snapshot
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: FULL FRUIT CLASSIFICATION DEMO -->
+  <div class="modal-overlay" id="fruitDemoModal" onclick="closeModalOnBackdrop(event, 'fruitDemoModal')">
+    <div class="modal-window modal-lg">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-robot text-accent"></i>
+          <h3>Deep Learning Model Studio: Fruits-360 Classifier (ResNet50)</h3>
+        </div>
+        <button class="modal-close" onclick="closeModal('fruitDemoModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="demo-studio-layout">
+          <div class="demo-studio-controls">
+            <h4>1. Select a Sample Image</h4>
+            <div class="sample-image-grid">
+              <button class="sample-btn active" onclick="loadStudioFruit('apple')">🍎 Apple Braeburn</button>
+              <button class="sample-btn" onclick="loadStudioFruit('banana')">🍌 Banana Lady Finger</button>
+              <button class="sample-btn" onclick="loadStudioFruit('strawberry')">🍓 Strawberry</button>
+              <button class="sample-btn" onclick="loadStudioFruit('lemon')">🍋 Lemon Meyer</button>
+              <button class="sample-btn" onclick="loadStudioFruit('orange')">🍊 Orange</button>
+              <button class="sample-btn" onclick="loadStudioFruit('blueberry')">🫐 Blueberry</button>
+            </div>
+
+            <div class="upload-dropzone" onclick="document.getElementById('fruitFileInput').click()">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <span>Or Upload Any Image to Classify</span>
+              <input type="file" id="fruitFileInput" accept="image/*" style="display:none" onchange="handleStudioUpload(event)">
+            </div>
+
+            <div class="model-architecture-info">
+              <h4>Architecture Settings</h4>
+              <p><strong>Backbone:</strong> ResNet50 (Pretrained on ImageNet)</p>
+              <p><strong>Fine-Tuning:</strong> Unfrozen top-10 layers + Dense(512) + Dropout(0.4) + Softmax(263)</p>
+              <p><strong>Optimization:</strong> Adam (lr=1e-4) with Categorical Crossentropy</p>
+            </div>
+          </div>
+
+          <div class="demo-studio-display">
+            <div class="studio-preview-box">
+              <div class="studio-fruit-symbol" id="studioFruitSymbol">🍎</div>
+              <div class="studio-badge" id="studioBadge">ResNet50 Inference Complete</div>
+            </div>
+
+            <div class="studio-chart-box">
+              <h4>Softmax Probability Distribution (Top-5 Classes)</h4>
+              <div class="prob-bar-container" id="studioProbBars">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+
+            <div class="studio-metrics-summary">
+              <div class="studio-metric">
+                <span class="label">Top-1 Class:</span>
+                <strong id="studioTopClass" class="text-accent">Apple Braeburn</strong>
+              </div>
+              <div class="studio-metric">
+                <span class="label">Confidence Score:</span>
+                <strong id="studioTopConfidence">99.2%</strong>
+              </div>
+              <div class="studio-metric">
+                <span class="label">Latency:</span>
+                <strong class="text-success">11.4 ms</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: FULL SQL QUERY STUDIO -->
+  <div class="modal-overlay" id="sqlDemoModal" onclick="closeModalOnBackdrop(event, 'sqlDemoModal')">
+    <div class="modal-window modal-lg">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-database text-accent"></i>
+          <h3>Interactive SQL Analytics Studio: 11 MENA Nations</h3>
+        </div>
+        <button class="modal-close" onclick="closeModal('sqlDemoModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="sql-studio-layout">
+          <div class="sql-sidebar">
+            <h4>Preset Analytical Queries</h4>
+            <div class="sql-queries-menu">
+              <button class="sql-menu-item active" onclick="executeStudioQuery('gdp_fdi')">
+                <i class="fa-solid fa-chart-line"></i> GDP Growth & FDI Inflows
+              </button>
+              <button class="sql-menu-item" onclick="executeStudioQuery('energy_co2')">
+                <i class="fa-solid fa-leaf"></i> Renewable Energy vs CO2
+              </button>
+              <button class="sql-menu-item" onclick="executeStudioQuery('demographics')">
+                <i class="fa-solid fa-users"></i> Population & Urbanization
+              </button>
+              <button class="sql-menu-item" onclick="executeStudioQuery('correlation')">
+                <i class="fa-solid fa-chart-pie"></i> High-Performing Economies
+              </button>
+            </div>
+            <button class="btn btn-primary btn-block" onclick="runCustomQuery()">
+              <i class="fa-solid fa-play"></i> Execute Query
+            </button>
+          </div>
+
+          <div class="sql-workspace">
+            <div class="sql-code-editor">
+              <div class="editor-bar">
+                <span>SQL Query Editor</span>
+                <span class="text-muted">PostgreSQL / SQLite Syntax</span>
+              </div>
+              <textarea id="studioSqlInput" rows="5"></textarea>
+            </div>
+
+            <div class="sql-output-area">
+              <div class="output-header">
+                <strong>Query Execution Results</strong>
+                <span id="sqlExecutionTime" class="text-success">Executed in 3.1ms · 4 rows returned</span>
+              </div>
+              <div class="table-responsive">
+                <table class="sql-studio-table" id="studioTable">
+                  <thead id="studioThead"></thead>
+                  <tbody id="studioTbody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 4: CRYPTOGRAPHY STUDIO -->
+  <div class="modal-overlay" id="cryptoDemoModal" onclick="closeModalOnBackdrop(event, 'cryptoDemoModal')">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-shield-halved text-accent"></i>
+          <h3>Cryptography & Security Algorithm Playground</h3>
+        </div>
+        <button class="modal-close" onclick="closeModal('cryptoDemoModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="crypto-studio-box">
+          <div class="form-group">
+            <label>Select Algorithm:</label>
+            <select id="modalCipherSelect" onchange="runModalCipher()">
+              <option value="vigenere">Vigenère Polyalphabetic Cipher</option>
+              <option value="caesar">Caesar Substitution Cipher</option>
+              <option value="vernam">Vernam / XOR Stream Simulation</option>
+              <option value="sha256">SHA-256 Cryptographic Hash</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Input Message / Plaintext:</label>
+            <textarea id="modalPlaintext" rows="3" oninput="runModalCipher()">Confidential AI Data Pipeline 2026</textarea>
+          </div>
+
+          <div class="form-group" id="modalKeyGroup">
+            <label>Encryption Key:</label>
+            <input type="text" id="modalKey" value="SECURITYKEY" oninput="runModalCipher()">
+          </div>
+
+          <div class="form-group">
+            <label>Result / Ciphertext:</label>
+            <div class="crypto-result-display" id="modalResultText"></div>
+          </div>
+
+          <div class="crypto-explanation" id="modalExplanation">
+            Vigenère Cipher uses a repeating keyword to shift each letter along the Caesar alphabet table.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 5: ARTISAN HUB PREVIEW -->
+  <div class="modal-overlay" id="artisanDemoModal" onclick="closeModalOnBackdrop(event, 'artisanDemoModal')">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-bag-shopping text-accent"></i>
+          <h3>Artisan Hub — E-Commerce Architecture Showcase</h3>
+        </div>
+        <button class="modal-close" onclick="closeModal('artisanDemoModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="artisan-modal-content">
+          <p>
+            <strong>Artisan Hub</strong> is a responsive e-commerce web platform designed to empower local craftsmen and artisans by connecting their unique creations with consumers.
+          </p>
+
+          <div class="feature-pills">
+            <span>Product Catalog</span><span>Dynamic Cart</span><span>Favorites List</span>
+            <span>Search & Filter</span><span>Form Validation</span><span>Dark / Light Mode</span>
+          </div>
+
+          <div class="modal-tech-box">
+            <h4>Codebase Highlights:</h4>
+            <ul>
+              <li>Pure vanilla ES6+ JavaScript with object-oriented event delegation.</li>
+              <li>Robust LocalStorage synchronization ensuring user shopping carts persist between sessions.</li>
+              <li>Fully responsive layout with CSS flexbox and grid layouts.</li>
+            </ul>
+          </div>
+
+          <div class="modal-actions-bar">
+            <a href="https://github.com/ahmed482005/artisan--website" target="_blank" rel="noopener" class="btn btn-primary">
+              <i class="fa-brands fa-github"></i> Inspect Repository on GitHub
+            </a>
+            <button class="btn btn-secondary" onclick="closeModal('artisanDemoModal')">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
